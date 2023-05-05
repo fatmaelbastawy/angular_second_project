@@ -1,0 +1,18 @@
+<h1>{{Store.Name}}</h1>
+
+
+<h3>{{ClientName}}</h3>
+<img src="{{Store.Logo}}" >
+
+<ul>
+  <li>{{Store.Branches[0]}}</li>
+    <li>{{Store.Branches[1]}}</li>
+      <li>{{Store.Branches[2]}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let item of Store.Branches">{{item}}</li>
+</ul>
+
+<h2>{{product.Name}}</h2>
+<img src="{{product.Img}}">
